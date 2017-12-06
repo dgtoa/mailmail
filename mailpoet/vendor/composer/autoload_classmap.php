@@ -204,6 +204,7 @@ return array(
     'MailPoet\\Router\\Endpoints\\ViewInBrowser' => $baseDir . '/lib/Router/Endpoints/ViewInBrowser.php',
     'MailPoet\\Router\\Router' => $baseDir . '/lib/Router/Router.php',
     'MailPoet\\Segments\\SubscribersFinder' => $baseDir . '/lib/Segments/SubscribersFinder.php',
+    'MailPoet\\Segments\\SubscribersListings' => $baseDir . '/lib/Segments/SubscribersListings.php',
     'MailPoet\\Segments\\WP' => $baseDir . '/lib/Segments/WP.php',
     'MailPoet\\Services\\Bridge' => $baseDir . '/lib/Services/Bridge.php',
     'MailPoet\\Services\\Bridge\\API' => $baseDir . '/lib/Services/Bridge/API.php',

@@ -73,6 +73,7 @@ class Database {
       $scheduled_tasks = Env::$db_prefix . 'scheduled_tasks';
       $scheduled_task_subscribers = Env::$db_prefix . 'scheduled_task_subscribers';
       $sending_queues = Env::$db_prefix . 'sending_queues';
+      $featured_queues = Env::$db_prefix . 'featured_queues';
       $newsletters = Env::$db_prefix . 'newsletters';
       $newsletter_templates = Env::$db_prefix . 'newsletter_templates';
       $newsletter_option_fields = Env::$db_prefix . 'newsletter_option_fields';
@@ -97,6 +98,7 @@ class Database {
       define('MP_SCHEDULED_TASKS_TABLE', $scheduled_tasks);
       define('MP_SCHEDULED_TASK_SUBSCRIBERS_TABLE', $scheduled_task_subscribers);
       define('MP_SENDING_QUEUES_TABLE', $sending_queues);
+      define('MP_FEATURED_QUEUES_TABLE', $featured_queues);
       define('MP_NEWSLETTERS_TABLE', $newsletters);
       define('MP_NEWSLETTER_TEMPLATES_TABLE', $newsletter_templates);
       define('MP_NEWSLETTER_SEGMENT_TABLE', $newsletter_segment);

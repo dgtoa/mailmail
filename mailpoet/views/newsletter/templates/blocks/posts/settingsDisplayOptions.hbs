@@ -1,4 +1,23 @@
 <div class="mailpoet_form_field">
+		<div class="mailpoet_form_field_title"><%= __('Is it Featured Post?') %></div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_is_featured_posts" class="mailpoet_is_featured_posts" value="true" {{#if model.featuredPost}}CHECKED{{/if}}/>
+            <%= __('Yes') %>
+        </label>
+    </div>
+    <div class="mailpoet_form_field_radio_option">
+        <label>
+            <input type="radio" name="mailpoet_is_featured_posts" class="mailpoet_is_featured_posts" value="false" {{#unless model.featuredPost}}CHECKED{{/unless}}/>
+            <%= __('No') %>
+        </label>
+    </div>
+</div>
+
+<hr class="mailpoet_separator" />
+
+<div class="mailpoet_form_field">
+		<div class="mailpoet_form_field_title"><%= __('Post display type') %></div>
     <div class="mailpoet_form_field_radio_option">
         <label>
             <input type="radio" name="mailpoet_posts_display_type" class="mailpoet_posts_display_type" value="excerpt" {{#ifCond model.displayType '==' 'excerpt'}}CHECKED{{/ifCond}}/>

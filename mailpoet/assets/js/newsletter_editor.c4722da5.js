@@ -1,13 +1,13 @@
 webpackJsonp([4],{
 
-/***/ 586:
+/***/ 587:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
+	  __webpack_require__(583),
 	  __webpack_require__(280),
 	  __webpack_require__(276),
-	  __webpack_require__(560)
+	  __webpack_require__(561)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, _, MailPoet) {
 
 	  var Module = {};
@@ -118,27 +118,26 @@ webpackJsonp([4],{
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(280);
-	__webpack_require__(543);
-	__webpack_require__(570);
-	__webpack_require__(572);
-	__webpack_require__(573);
+	__webpack_require__(544);
 	__webpack_require__(571);
-	__webpack_require__(289);
+	__webpack_require__(573);
 	__webpack_require__(574);
+	__webpack_require__(572);
+	__webpack_require__(289);
 	__webpack_require__(575);
 	__webpack_require__(576);
 	__webpack_require__(577);
-	__webpack_require__(580);
+	__webpack_require__(578);
 	__webpack_require__(581);
 	__webpack_require__(582);
 	__webpack_require__(583);
 	__webpack_require__(584);
 	__webpack_require__(585);
-	__webpack_require__(587);
+	__webpack_require__(586);
 	__webpack_require__(588);
 	__webpack_require__(589);
-	__webpack_require__(586);
-	__webpack_require__(592);
+	__webpack_require__(590);
+	__webpack_require__(587);
 	__webpack_require__(593);
 	__webpack_require__(594);
 	__webpack_require__(595);
@@ -159,7 +158,8 @@ webpackJsonp([4],{
 	__webpack_require__(610);
 	__webpack_require__(611);
 	__webpack_require__(612);
-	module.exports = __webpack_require__(613);
+	__webpack_require__(613);
+	module.exports = __webpack_require__(614);
 
 
 /***/ },
@@ -7496,15 +7496,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 543:
+/***/ 544:
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Backbone"] = __webpack_require__(544);
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Backbone"] = __webpack_require__(545);
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 
-/***/ 544:
+/***/ 545:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {//     Backbone.js 1.3.3
@@ -9432,7 +9432,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 560:
+/***/ 561:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function requestFailed(errorMessage, xhr) {
@@ -9526,7 +9526,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 563:
+/***/ 564:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(276), __webpack_require__(275)], __WEBPACK_AMD_DEFINE_RESULT__ = function (mp, jQuery) {
@@ -10171,7 +10171,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 564:
+/***/ 565:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(276), __webpack_require__(275)], __WEBPACK_AMD_DEFINE_RESULT__ = function (mp, jQuery) {
@@ -10396,7 +10396,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 570:
+/***/ 571:
 /***/ function(module, exports, __webpack_require__) {
 
 	// MarionetteJS (Backbone.Marionette)
@@ -10410,7 +10410,7 @@ webpackJsonp([4],{
 
 
 	(function (global, factory) {
-		 true ? module.exports = factory(__webpack_require__(543), __webpack_require__(280), __webpack_require__(571)) :
+		 true ? module.exports = factory(__webpack_require__(544), __webpack_require__(280), __webpack_require__(572)) :
 		typeof define === 'function' && define.amd ? define(['backbone', 'underscore', 'backbone.radio'], factory) :
 		(global.Marionette = global['Mn'] = factory(global.Backbone,global._,global.Backbone.Radio));
 	}(this, (function (Backbone,_,Radio) { 'use strict';
@@ -13891,13 +13891,13 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 571:
+/***/ 572:
 /***/ function(module, exports, __webpack_require__) {
 
 	// Backbone.Radio v2.0.0
 
 	(function (global, factory) {
-	   true ? module.exports = factory(__webpack_require__(280), __webpack_require__(543)) :
+	   true ? module.exports = factory(__webpack_require__(280), __webpack_require__(544)) :
 	  typeof define === 'function' && define.amd ? define(['underscore', 'backbone'], factory) :
 	  (global.Backbone = global.Backbone || {}, global.Backbone.Radio = factory(global._,global.Backbone));
 	}(this, function (_,Backbone) { 'use strict';
@@ -14247,7 +14247,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 572:
+/***/ 573:
 /***/ function(module, exports) {
 
 	Backbone.SuperModel = (function(_, Backbone){
@@ -14670,7 +14670,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 573:
+/***/ 574:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20654,7 +20654,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 574:
+/***/ 575:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Spectrum Colorpicker v1.8.0
@@ -22984,7 +22984,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 575:
+/***/ 576:
 /***/ function(module, exports) {
 
 	// Generated by CoffeeScript 1.9.2
@@ -23255,7 +23255,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 576:
+/***/ 577:
 /***/ function(module, exports) {
 
 	/* Blob.js
@@ -23476,7 +23476,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 577:
+/***/ 578:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* FileSaver.js
@@ -23662,7 +23662,7 @@ webpackJsonp([4],{
 
 	if (typeof module !== "undefined" && module.exports) {
 	  module.exports.saveAs = saveAs;
-	} else if (("function" !== "undefined" && __webpack_require__(578) !== null) && (__webpack_require__(579) !== null)) {
+	} else if (("function" !== "undefined" && __webpack_require__(579) !== null) && (__webpack_require__(580) !== null)) {
 	  !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
 	    return saveAs;
 	  }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -23671,7 +23671,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 578:
+/***/ 579:
 /***/ function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
@@ -23679,7 +23679,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 579:
+/***/ 580:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -23688,7 +23688,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 580:
+/***/ 581:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*** IMPORTS FROM imports-loader ***/
@@ -27584,7 +27584,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 581:
+/***/ 582:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -27596,11 +27596,11 @@ webpackJsonp([4],{
 	 */
 
 	(function (root, factory) {
-	  var Marionette = __webpack_require__(570);
-	  var Radio = __webpack_require__(571);
+	  var Marionette = __webpack_require__(571);
+	  var Radio = __webpack_require__(572);
 	  var _ = __webpack_require__(280);
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(570), __webpack_require__(571), __webpack_require__(280)], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, Radio, _) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(571), __webpack_require__(572), __webpack_require__(280)], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, Radio, _) {
 	      return factory(Marionette, Radio, _);
 	    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  }
@@ -27623,13 +27623,13 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 582:
+/***/ 583:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(543),
-	  __webpack_require__(570),
-	  __webpack_require__(571)
+	  __webpack_require__(544),
+	  __webpack_require__(571),
+	  __webpack_require__(572)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Backbone, Marionette, BackboneRadio) {
 	  var Radio = BackboneRadio;
 
@@ -27670,12 +27670,12 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 583:
+/***/ 584:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(572)
+	  __webpack_require__(583),
+	  __webpack_require__(573)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, SuperModel) {
 
 	  var Module = {};
@@ -27714,13 +27714,13 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 584:
+/***/ 585:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(570),
-	  __webpack_require__(572),
+	  __webpack_require__(583),
+	  __webpack_require__(571),
+	  __webpack_require__(573),
 	  __webpack_require__(280)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, Marionette, SuperModel, _) {
 
@@ -27813,16 +27813,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 585:
+/***/ 586:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(586),
+	  __webpack_require__(583),
+	  __webpack_require__(587),
 	  __webpack_require__(276),
-	  __webpack_require__(543),
-	  __webpack_require__(570),
-	  __webpack_require__(572),
+	  __webpack_require__(544),
+	  __webpack_require__(571),
+	  __webpack_require__(573),
 	  __webpack_require__(280),
 	  __webpack_require__(275)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (
@@ -28215,12 +28215,12 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 587:
+/***/ 588:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(572),
+	  __webpack_require__(583),
+	  __webpack_require__(573),
 	  __webpack_require__(280),
 	  __webpack_require__(276)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, SuperModel, _, MailPoet) {
@@ -28329,13 +28329,13 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 588:
+/***/ 589:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(543),
-	  __webpack_require__(570),
+	  __webpack_require__(583),
+	  __webpack_require__(544),
+	  __webpack_require__(571),
 	  __webpack_require__(280),
 	  __webpack_require__(275),
 	  __webpack_require__(276)
@@ -28382,20 +28382,20 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 589:
+/***/ 590:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(586),
+	  __webpack_require__(583),
+	  __webpack_require__(587),
 	  __webpack_require__(276),
-	  __webpack_require__(564),
-	  __webpack_require__(543),
-	  __webpack_require__(570),
+	  __webpack_require__(565),
+	  __webpack_require__(544),
+	  __webpack_require__(571),
 	  __webpack_require__(275),
-	  __webpack_require__(576),
 	  __webpack_require__(577),
-	  __webpack_require__(590),
+	  __webpack_require__(578),
+	  __webpack_require__(591),
 	  __webpack_require__(280),
 	  __webpack_require__(275)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (
@@ -28760,15 +28760,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 590:
+/***/ 591:
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["html2canvas"] = __webpack_require__(591);
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["html2canvas"] = __webpack_require__(592);
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 
-/***/ 591:
+/***/ 592:
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;var require;/* WEBPACK VAR INJECTION */(function(global) {/*
@@ -33309,7 +33309,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 592:
+/***/ 593:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -33319,7 +33319,7 @@ webpackJsonp([4],{
 	 * For more check: http://marionettejs.com/docs/marionette.behaviors.html#behaviorslookup
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570)
+	  __webpack_require__(571)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (BackboneMarionette) {
 	  var Marionette = BackboneMarionette;
 	  var BehaviorsLookup = {};
@@ -33335,7 +33335,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 593:
+/***/ 594:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -33344,10 +33344,10 @@ webpackJsonp([4],{
 	 * Adds a color picker integration with the view
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
-	  __webpack_require__(592),
+	  __webpack_require__(571),
+	  __webpack_require__(593),
 	  __webpack_require__(276),
-	  __webpack_require__(574)
+	  __webpack_require__(575)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, BehaviorsLookup, MailPoet) {
 	  var BL = BehaviorsLookup;
 
@@ -33389,7 +33389,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 594:
+/***/ 595:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
@@ -33401,11 +33401,11 @@ webpackJsonp([4],{
 	 * accept droppables
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
+	  __webpack_require__(571),
 	  __webpack_require__(280),
 	  __webpack_require__(275),
-	  __webpack_require__(592),
-	  __webpack_require__(573)
+	  __webpack_require__(593),
+	  __webpack_require__(574)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, _, jQuery, BL, interact) {
 	  var BehaviorsLookup = BL;
 
@@ -33855,7 +33855,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 595:
+/***/ 596:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -33865,11 +33865,11 @@ webpackJsonp([4],{
 	 * Part of the drag&drop behavior.
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
+	  __webpack_require__(571),
 	  __webpack_require__(280),
 	  __webpack_require__(275),
-	  __webpack_require__(592),
-	  __webpack_require__(573)
+	  __webpack_require__(593),
+	  __webpack_require__(574)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, _, jQuery, BehaviorsLookup, interact) {
 	  var BL = BehaviorsLookup;
 
@@ -34010,7 +34010,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 596:
+/***/ 597:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34019,8 +34019,8 @@ webpackJsonp([4],{
 	 * Highlights a container block when hovering over its tools
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
-	  __webpack_require__(592)
+	  __webpack_require__(571),
+	  __webpack_require__(593)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, BehaviorsLookup) {
 	  var BL = BehaviorsLookup;
 
@@ -34043,7 +34043,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 597:
+/***/ 598:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34052,8 +34052,8 @@ webpackJsonp([4],{
 	 * Highlights a block that is being edited
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
-	  __webpack_require__(592)
+	  __webpack_require__(571),
+	  __webpack_require__(593)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, BehaviorsLookup) {
 	  var BL = BehaviorsLookup;
 
@@ -34076,7 +34076,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 598:
+/***/ 599:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34085,9 +34085,9 @@ webpackJsonp([4],{
 	 * Allows resizing elements within a block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
-	  __webpack_require__(592),
-	  __webpack_require__(573)
+	  __webpack_require__(571),
+	  __webpack_require__(593),
+	  __webpack_require__(574)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, BehaviorsLookup, interact) {
 	  var BL = BehaviorsLookup;
 
@@ -34157,7 +34157,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 599:
+/***/ 600:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34166,9 +34166,9 @@ webpackJsonp([4],{
 	 * Allows sorting elements within a collection
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
+	  __webpack_require__(571),
 	  __webpack_require__(280),
-	  __webpack_require__(592)
+	  __webpack_require__(593)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, _, BehaviorsLookup) {
 	  var BL = BehaviorsLookup;
 
@@ -34205,7 +34205,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 600:
+/***/ 601:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34214,9 +34214,9 @@ webpackJsonp([4],{
 	 * Opens up settings of a BlockView if contents are clicked upon
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
+	  __webpack_require__(571),
 	  __webpack_require__(275),
-	  __webpack_require__(592)
+	  __webpack_require__(593)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, jQuery, BehaviorsLookup) {
 	  var BL = BehaviorsLookup;
 
@@ -34244,7 +34244,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 601:
+/***/ 602:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34253,9 +34253,9 @@ webpackJsonp([4],{
 	 * Adds TinyMCE text editing capabilities to a view
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(570),
+	  __webpack_require__(571),
 	  __webpack_require__(280),
-	  __webpack_require__(592)
+	  __webpack_require__(593)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Marionette, _, BehaviorsLookup) {
 	  var BL = BehaviorsLookup;
 
@@ -34337,7 +34337,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 602:
+/***/ 603:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34347,13 +34347,13 @@ webpackJsonp([4],{
 	 * BlockToolsView, BlockSettingsView and BlockWidgetView are optional.
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(570),
-	  __webpack_require__(572),
+	  __webpack_require__(583),
+	  __webpack_require__(571),
+	  __webpack_require__(573),
 	  __webpack_require__(280),
 	  __webpack_require__(275),
 	  __webpack_require__(276),
-	  __webpack_require__(563)
+	  __webpack_require__(564)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, Marionette, SuperModel, _, jQuery, MailPoet) {
 
 	  'use strict';
@@ -34653,7 +34653,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 603:
+/***/ 604:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -34662,12 +34662,12 @@ webpackJsonp([4],{
 	 * as other containers.
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(543),
-	  __webpack_require__(570),
+	  __webpack_require__(544),
+	  __webpack_require__(571),
 	  __webpack_require__(280),
 	  __webpack_require__(275),
-	  __webpack_require__(582),
-	  __webpack_require__(602)
+	  __webpack_require__(583),
+	  __webpack_require__(603)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (Backbone, Marionette, _, jQuery, App, BaseBlock) {
 
 	  'use strict';
@@ -35025,15 +35025,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 604:
+/***/ 605:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Button content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(276),
 	  __webpack_require__(280),
 	  __webpack_require__(275)
@@ -35181,15 +35181,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 605:
+/***/ 606:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Image content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(280),
 	  __webpack_require__(276),
 	  __webpack_require__(275)
@@ -35618,15 +35618,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 606:
+/***/ 607:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Divider content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(280),
 	  __webpack_require__(275)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, BaseBlock, _, jQuery) {
@@ -35780,15 +35780,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 607:
+/***/ 608:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Text content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(280),
 	  __webpack_require__(276)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, BaseBlock, _, MailPoet) {
@@ -35899,15 +35899,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 608:
+/***/ 609:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Spacer content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(280)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, BaseBlock, _) {
 
@@ -36010,15 +36010,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 609:
+/***/ 610:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Footer content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(280),
 	  __webpack_require__(276)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, BaseBlock, _, MailPoet) {
@@ -36144,15 +36144,15 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 610:
+/***/ 611:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Header content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
 	  __webpack_require__(280),
 	  __webpack_require__(276)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, BaseBlock, _, MailPoet) {
@@ -36278,7 +36278,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 611:
+/***/ 612:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -36290,13 +36290,13 @@ webpackJsonp([4],{
 	 * block settings view.
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
-	  __webpack_require__(604),
-	  __webpack_require__(606),
-	  __webpack_require__(586),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
+	  __webpack_require__(605),
+	  __webpack_require__(607),
+	  __webpack_require__(587),
 	  __webpack_require__(276),
-	  __webpack_require__(572),
+	  __webpack_require__(573),
 	  __webpack_require__(280),
 	  __webpack_require__(275)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (
@@ -36688,7 +36688,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 612:
+/***/ 613:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -36704,17 +36704,17 @@ webpackJsonp([4],{
 	 * block settings view.
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(543),
-	  __webpack_require__(570),
+	  __webpack_require__(544),
 	  __webpack_require__(571),
+	  __webpack_require__(572),
 	  __webpack_require__(280),
 	  __webpack_require__(275),
 	  __webpack_require__(276),
-	  __webpack_require__(582),
-	  __webpack_require__(586),
-	  __webpack_require__(602),
-	  __webpack_require__(604),
-	  __webpack_require__(606),
+	  __webpack_require__(583),
+	  __webpack_require__(587),
+	  __webpack_require__(603),
+	  __webpack_require__(605),
+	  __webpack_require__(607),
 	  __webpack_require__(289)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (
 	  Backbone,
@@ -36753,6 +36753,7 @@ webpackJsonp([4],{
 	        search: '', // Search keyword term
 	        inclusionType: 'include', // 'include'|'exclude'
 	        displayType: 'excerpt', // 'excerpt'|'full'|'titleOnly'
+	        featuredPost: false, //false|true
 	        titleFormat: 'h1', // 'h1'|'h2'|'h3'|'ul'
 	        titleAlignment: 'left', // 'left'|'center'|'right'
 	        titleIsLink: false, // false|true
@@ -37294,18 +37295,18 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 613:
+/***/ 614:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Social icons content block
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	  __webpack_require__(582),
-	  __webpack_require__(602),
-	  __webpack_require__(543),
-	  __webpack_require__(570),
-	  __webpack_require__(572),
+	  __webpack_require__(583),
+	  __webpack_require__(603),
+	  __webpack_require__(544),
+	  __webpack_require__(571),
+	  __webpack_require__(573),
 	  __webpack_require__(280),
 	  __webpack_require__(275)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (App, BaseBlock, Backbone, Marionette, SuperModel, _, jQuery) {

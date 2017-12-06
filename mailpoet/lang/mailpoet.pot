@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://support.mailpoet.com/\n"
-"POT-Creation-Date: 2017-11-07 13:13:53+00:00\n"
+"POT-Creation-Date: 2017-11-14 19:15:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -130,7 +130,8 @@ msgstr ""
 
 #: lib/API/JSON/v1/Segments.php:24 lib/API/JSON/v1/Segments.php:75
 #: lib/API/JSON/v1/Segments.php:91 lib/API/JSON/v1/Segments.php:107
-#: lib/API/JSON/v1/Segments.php:121
+#: lib/API/JSON/v1/Segments.php:121 lib/API/MP/v1/API.php:58
+#: lib/API/MP/v1/API.php:103
 msgid "This list does not exist."
 msgstr ""
 
@@ -204,25 +205,25 @@ msgstr ""
 msgid "You have not specified any settings to be saved."
 msgstr ""
 
-#: lib/API/JSON/v1/Subscribers.php:30 lib/API/JSON/v1/Subscribers.php:164
-#: lib/API/JSON/v1/Subscribers.php:180 lib/API/JSON/v1/Subscribers.php:196
-#: lib/API/MP/v1/API.php:48
+#: lib/API/JSON/v1/Subscribers.php:32 lib/API/JSON/v1/Subscribers.php:173
+#: lib/API/JSON/v1/Subscribers.php:189 lib/API/JSON/v1/Subscribers.php:205
+#: lib/API/MP/v1/API.php:52 lib/API/MP/v1/API.php:97 lib/API/MP/v1/API.php:225
 msgid "This subscriber does not exist."
 msgstr ""
 
-#: lib/API/JSON/v1/Subscribers.php:71
+#: lib/API/JSON/v1/Subscribers.php:80
 msgid "Please specify a valid form ID."
 msgstr ""
 
-#: lib/API/JSON/v1/Subscribers.php:76
+#: lib/API/JSON/v1/Subscribers.php:85
 msgid "Please leave the first field empty."
 msgstr ""
 
-#: lib/API/JSON/v1/Subscribers.php:92 views/form/editor.html:57
+#: lib/API/JSON/v1/Subscribers.php:101 views/form/editor.html:57
 msgid "Please select a list."
 msgstr ""
 
-#: lib/API/JSON/v1/Subscribers.php:104
+#: lib/API/JSON/v1/Subscribers.php:113
 msgid "You need to wait %d seconds before subscribing again."
 msgstr ""
 
@@ -240,23 +241,29 @@ msgstr ""
 msgid "Last name"
 msgstr ""
 
-#: lib/API/MP/v1/API.php:54
-msgid "These lists do not exist."
+#: lib/API/MP/v1/API.php:46 lib/API/MP/v1/API.php:91
+msgid "At least one segment ID is required."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:87
+#: lib/API/MP/v1/API.php:75 lib/API/MP/v1/API.php:120
+msgid "List with ID %s does not exist."
+msgid_plural "Lists with IDs %s do not exist."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/API/MP/v1/API.php:141
 msgid "Subscriber email address is required."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:94
+#: lib/API/MP/v1/API.php:148
 msgid "This subscriber already exists."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:140
+#: lib/API/MP/v1/API.php:194
 msgid "List name is required."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:147
+#: lib/API/MP/v1/API.php:201
 msgid "This list already exists."
 msgstr ""
 
@@ -1221,11 +1228,11 @@ msgstr ""
 msgid "Please leave this field empty"
 msgstr ""
 
-#: lib/Form/Util/Export.php:55
+#: lib/Form/Util/Export.php:56
 msgid "BEGIN Scripts: you should place them in the header of your theme"
 msgstr ""
 
-#: lib/Form/Util/Export.php:87
+#: lib/Form/Util/Export.php:88
 msgid "END Scripts"
 msgstr ""
 
@@ -1431,7 +1438,7 @@ msgstr ""
 msgid "Bounced"
 msgstr ""
 
-#: lib/Newsletter/Editor/PostContentManager.php:89
+#: lib/Newsletter/Editor/PostContentManager.php:88
 msgid "Click here to view media."
 msgstr ""
 
@@ -2486,6 +2493,7 @@ msgstr ""
 
 #: views/newsletter/editor.html:316
 #: views/newsletter/templates/blocks/base/toolsGeneric.hbs:6
+#: views/newsletters.html:266
 #: views/subscribers/importExport/import/step2.html:150
 msgid "Cancel"
 msgstr ""
@@ -3095,11 +3103,11 @@ msgstr ""
 msgid "Spacer"
 msgstr ""
 
-#: views/newsletter/templates/components/heading.hbs:6
+#: views/newsletter/templates/components/heading.hbs:7
 msgid "Click here to change the subject!"
 msgstr ""
 
-#: views/newsletter/templates/components/heading.hbs:14
+#: views/newsletter/templates/components/heading.hbs:15
 msgid "Preview text (usually displayed underneath the subject line in the inbox)"
 msgstr ""
 
@@ -3843,6 +3851,14 @@ msgstr ""
 msgid ""
 "Sending is in progress. Do you want to pause sending and edit the "
 "newsletter?"
+msgstr ""
+
+#: views/newsletters.html:264
+msgid "Confirm to proceed"
+msgstr ""
+
+#: views/newsletters.html:265
+msgid "Confirm"
 msgstr ""
 
 #: views/premium.html:6
