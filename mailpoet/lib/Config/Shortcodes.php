@@ -30,20 +30,8 @@ class Shortcodes {
     Hooks::addFilter('mailpoet_archive_date', array(
       $this, 'renderArchiveDate'
     ), 2);
-    Hooks::addFilter('mailpoet_archive_date_day', array(
-      $this, 'renderArchiveDateDay'
-    ), 2);
-    Hooks::addFilter('mailpoet_archive_date_month', array(
-      $this, 'renderArchiveDateMonth'
-    ), 2);
-    Hooks::addFilter('mailpoet_archive_date_year', array(
-      $this, 'renderArchiveDateYear'
-    ), 2);    
     Hooks::addFilter('mailpoet_archive_subject', array(
       $this, 'renderArchiveSubject'
-    ), 2, 3);
-    Hooks::addFilter('mailpoet_archive_preheader', array(
-      $this, 'renderArchivePreheader'
     ), 2, 3);
   }
 
@@ -86,11 +74,11 @@ class Shortcodes {
         return (int)trim($segment_id);
       }, explode(',', $params['segments']));
     }
-    
+
     $html = '';
 
     $newsletters = Newsletter::getArchives($segment_ids);
-    
+
     $subscriber = Subscriber::getCurrentWPUser();
 
     if(empty($newsletters)) {
@@ -104,46 +92,18 @@ class Shortcodes {
         $html .= '<h3 class="mailpoet_archive_title">'.$title.'</h3>';
       }
       $html .= '<ul class="mailpoet_archive">';
-      //print_r(count($newsletters));
       foreach($newsletters as $newsletter) {
         $queue = $newsletter->queue()->findOne();
-        
-        $post_id = $GLOBALS['wpdb']->get_row( 'SELECT * FROM kias.wp_mailpoet_newsletter_posts where created_at="' . $newsletter->created_at . '"' )->post_id;
-        $post = get_post($post_id);
-        $thumbnail_url = $GLOBALS['wpdb']->get_row( 'SELECT * FROM kias.wp_mailpoet_newsletters where id="' . $newsletter->id . '"' )->thumbnail_url;
-        $thumbnail_image = wp_get_image_editor($thumbnail_url);
-        //if(!is_wp_error($thumbnail_image))
-            //print_r("ddd");
-            //$thumbnail_image->resize(150, 150, true);
-        $thumbnail_url_name = '';
-        $arr_thumbnail_url_name = split("\.", $thumbnail_url);
-        for($i=0; $i<sizeof($arr_thumbnail_url_name)-1;$i++) {
-             $thumbnail_url_name .=  $arr_thumbnail_url_name[$i];
-             if($i<sizeof($arr_thumbnail_url_name)-2)
-                $thumbnail_url_name .= '.';
-        }
-        //print_r($thumbnail_url_name . "=========="); 
-        
-        $html .= '<li>'.   
-          '<div class="mailpoet_archive_date">'. 
-            '<p class="mailpoet_archive_date_day" >' . Hooks::applyFilters('mailpoet_archive_date_day', $newsletter) . ' </p>' .
-            '<p class="mailpoet_archive_date_month">' . Hooks::applyFilters('mailpoet_archive_date_month', $newsletter) . '</p> 
-          </div>';
-          $html.= ($newsletter->type == 'notification_history') ? 
-                get_the_post_thumbnail($post, 'thumbnail') : 
-                '<img width="150" height="150" src="'.$thumbnail_url_name.'-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" sizes="(max-width: 150px) 100vw, 150px">';
-          $html.= '<div class="newsletter-title-area">
-          <div class="mailpoet_archive_preheader">';
-          $html.= ($newsletter->type == 'notification_history') ? get_the_category($post_id)[0]->name  : Hooks::applyFilters('mailpoet_archive_preheader', $newsletter, $subscriber, $queue) ;
-          $html.=  '</div>
-          <div class="mailpoet_archive_subject">';
-          $html.= ($newsletter->type == 'notification_history') ? Hooks::applyFilters('mailpoet_archive_subject', $newsletter, $subscriber, $queue) : $newsletter->subject;
-          $html.= '</div>
-          </div>
+        $html .= '<li>'.
+          '<span class="mailpoet_archive_date">'.
+            Hooks::applyFilters('mailpoet_archive_date', $newsletter).
+          '</span>
+          <span class="mailpoet_archive_subject">'.
+            Hooks::applyFilters('mailpoet_archive_subject', $newsletter, $subscriber, $queue).
+          '</span>
         </li>';
       }
       $html .= '</ul>';
-
     }
     return $html;
   }
@@ -155,25 +115,6 @@ class Shortcodes {
     );
   }
 
-  function renderArchiveDateDay($newsletter) {
-    return date_i18n(
-      'd',
-      strtotime($newsletter->processed_at)
-    );
-  }
-   function renderArchiveDateMonth($newsletter) {
-    return date_i18n(
-      'F',
-      strtotime($newsletter->processed_at)
-    );
-  }
-  function renderArchiveDateYear($newsletter) {
-    return date_i18n(
-      'y',
-      strtotime($newsletter->processed_at)
-    );
-  }
-  
   function renderArchiveSubject($newsletter, $subscriber, $queue) {
     $preview_url = NewsletterUrl::getViewInBrowserUrl(
       NewsletterUrl::TYPE_ARCHIVE,
@@ -186,16 +127,4 @@ class Shortcodes {
       .esc_attr($newsletter->newsletter_rendered_subject).
     '</a>';
   }
-  function renderArchivePreheader($newsletter, $subscriber, $queue) {
-    $preview_url = NewsletterUrl::getViewInBrowserUrl(
-      NewsletterUrl::TYPE_ARCHIVE,
-      $newsletter,
-      $subscriber,
-      $queue
-    );
-    return 
-      esc_attr($newsletter->preheader);
-      //print_r($newsletter);
-  }
-  
 }

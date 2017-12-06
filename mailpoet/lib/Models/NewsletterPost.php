@@ -11,5 +11,4 @@ class NewsletterPost extends Model {
       ->orderByDesc('created_at')
       ->findOne();
   }
- 
 }

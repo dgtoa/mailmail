@@ -167,8 +167,8 @@ class Renderer {
           'blocks' => array(
             array(
               'type' => 'image',
-              'link' => 'http://horizon.tapzin.com',
-              'src' => 'http://horizon.tapzin.com/wp-content/uploads/2017/10/%EC%9E%90%EC%82%B0-120-1.png', //Env::$assets_url . '/img/mailpoet_logo_newsletter.png',
+              'link' => 'http://www.mailpoet.com',
+              'src' => Env::$assets_url . '/img/mailpoet_logo_newsletter.png',
               'fullWidth' => false,
               'alt' => 'MailPoet',
               'width' => '108px',
@@ -176,9 +176,6 @@ class Renderer {
               'styles' => array(
                 'block' => array(
                   'textAlign' => 'center'
-                ),
-                'margin' => array(
-                    'margin-top' => '20px'
                 )
               )
             )
