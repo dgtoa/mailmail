@@ -36753,6 +36753,7 @@ webpackJsonp([4],{
 	        search: '', // Search keyword term
 	        inclusionType: 'include', // 'include'|'exclude'
 	        displayType: 'excerpt', // 'excerpt'|'full'|'titleOnly'
+	        featuredPost: false, //false|true
 	        titleFormat: 'h1', // 'h1'|'h2'|'h3'|'ul'
 	        titleAlignment: 'left', // 'left'|'center'|'right'
 	        titleIsLink: false, // false|true

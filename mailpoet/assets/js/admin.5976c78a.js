@@ -11068,6 +11068,16 @@ webpackJsonp([0],{
 	      'data-parsley-required-message': MailPoet.I18n.t('emptySubjectLineError')
 	    }
 	  }, {
+	    name: 'thumbnail_url',
+	    label: MailPoet.I18n.t('ThumbnailurlLine'),
+	    tip: MailPoet.I18n.t('ThumbnailurlTip'),
+	    type: 'text', 
+	    validation: {
+	      'data-parsley-required': true,
+	      'data-parsley-required-message': MailPoet.I18n.t('emptyThumbnailurlError')
+	      
+	    }
+	  }, {
 	    name: 'segments',
 	    label: MailPoet.I18n.t('segments'),
 	    tip: MailPoet.I18n.t('segmentsTip'),

@@ -7,9 +7,12 @@ use MailPoet\Models\NewsletterPost;
 if(!defined('ABSPATH')) exit;
 
 class Posts {
-  static function extractAndSave($rendered_newsletter, $newsletter) {
-    if($newsletter->type !== NewsletterModel::TYPE_NOTIFICATION_HISTORY) {
-      return false;
+  static function extractAndSave($rendered_newsletter, $newsletter, $is_featured = false) {
+    if($newsletter->type !== NewsletterModel::TYPE_NOTIFICATION_HISTORY) { //featuredPost 옵션을 불러와 매치할 필요가 있음
+        if($is_featured === true) {
+            
+        }
+        return false;
     }
     preg_match_all(
       '/data-post-id="(\d+)"/ism',

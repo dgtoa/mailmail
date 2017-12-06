@@ -358,7 +358,7 @@ class Populator {
       'subscribers' => array('first_name', 'last_name', 'email', 'status', 'subscribed_ip', 'confirmed_ip', 'unconfirmed_data'),
       'subscriber_segment' => array('status'),
       'subscriber_custom_field' => array('value'),
-      'newsletters' => array('hash', 'subject', 'type', 'sender_address', 'sender_name', 'status', 'reply_to_address', 'reply_to_name', 'preheader', 'body'),
+      'newsletters' => array('hash', 'subject', 'type', 'sender_address', 'sender_name', 'status', 'reply_to_address', 'reply_to_name', 'preheader', 'body', 'thumbnail_url'),
       'newsletter_templates' => array('name', 'description', 'body', 'thumbnail'),
       'newsletter_option_fields' => array('name', 'newsletter_type'),
       'newsletter_option' => array('value'),

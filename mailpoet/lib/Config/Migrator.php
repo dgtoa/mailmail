@@ -20,6 +20,7 @@ class Migrator {
       'scheduled_tasks',
       'scheduled_task_subscribers',
       'sending_queues',
+      'featured_queues',
       'subscribers',
       'subscriber_segment',
       'subscriber_custom_field',
@@ -156,6 +157,16 @@ class Migrator {
     );
     return $this->sqlify(__FUNCTION__, $attributes);
   }
+  
+  function featuredQueues() {
+    $attributes = array(
+      'id int(11) unsigned NOT NULL AUTO_INCREMENT,',
+      'newsletter_id int(11) unsigned NOT NULL,',
+      'post_id int(11) unsigned NOT NULL,',
+      'PRIMARY KEY  (id)',
+    );
+    return $this->sqlify(__FUNCTION__, $attributes);
+  }
 
   function subscribers() {
     $attributes = array(
@@ -232,6 +243,7 @@ class Migrator {
       'reply_to_name varchar(150) NOT NULL DEFAULT "",',
       'preheader varchar(250) NOT NULL DEFAULT "",',
       'body longtext,',
+      'thumbnail_url longtext,',
       'sent_at TIMESTAMP NULL,',
       'created_at TIMESTAMP NULL,',
       'updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,',

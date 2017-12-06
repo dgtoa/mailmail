@@ -3,8 +3,8 @@
 if(!defined('ABSPATH')) exit;
 
 /*
- * Plugin Name: MailPoet 3 (New)
- * Version: 3.2.0
+ * Plugin Name: MailPoet 3 (업데이트 금지)
+ * Version: 9.9.9
  * Plugin URI: http://www.mailpoet.com
  * Description: Create and send newsletters, post notifications and welcome emails from your WordPress.
  * Author: MailPoet
@@ -19,6 +19,8 @@ if(!defined('ABSPATH')) exit;
  * @since 3.0.0-beta.1
  */
 
+ /* Version: 3.2.0 수정 */
+ 
 $mailpoet_plugin = array(
   'version' => '3.2.0',
   'filename' => __FILE__,
